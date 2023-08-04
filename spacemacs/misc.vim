@@ -11,9 +11,13 @@ nnoremap g;    :action JumpToLastChange<CR>
 vnoremap g;    :action JumpToLastChange<CR>
 
 " Go to declaration
-let g:WhichKeyDesc_Misc_JumpToDefinition = "gd jump-to-definition"
+let g:WhichKeyDesc_Misc_JumpToDefinition = "<leader>gd jump-to-definition"
 nnoremap <leader>gd    :action GotoDeclaration<CR>
 vnoremap <leader>gd    <Esc>:action GotoDeclaration<CR>
+
+let g:WhichKeyDesc_Misc_JumpToDefinition_WO_Leader = "gd jump-to-definition"
+nnoremap gd    :action GotoDeclaration<CR>
+vnoremap gd    <Esc>:action GotoDeclaration<CR>
 
 " Collapse all folds
 let g:WhichKeyDesc_Misc_CloseFolds = "zm close-folds"
