@@ -58,8 +58,8 @@ vnoremap <leader>ft    :action ActivateProjectToolWindow<CR>
 """ Yank/Copy Submenu ---------------------------------
 let g:WhichKeyDesc_Files_YankCopy = "<leader>fy +Yank/Copy"
 
-" Copy file path
-let g:WhichKeyDesc_Files_YankCopy_FilePath = "<leader>fyy file-path"
-nnoremap <leader>fyy    :action CopyAbsolutePath<CR>
-vnoremap <leader>fyy    :action CopyAbsolutePath<CR>
+" Copy file path popup
+let g:WhichKeyDesc_Files_YankCopy_FilePath = "<leader>fyy popup"
+nnoremap <leader>fyy    :action CopyReferencePopupGroup<CR>
+vnoremap <leader>fyy    :action CopyReferencePopupGroup<CR>
 """ ---------------------------------------------------
