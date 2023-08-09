@@ -47,8 +47,8 @@ vnoremap <leader>pI    :action InvalidateCaches<CR>
 
 " Recent projects
 let g:WhichKeyDesc_Projects_RecentProjects = "<leader>pp recent-projects"
-nnoremap <leader>pp    :action ManageRecentProjects<CR>
-vnoremap <leader>pp    :action ManageRecentProjects<CR>
+nnoremap <leader>pp    :action $LRU<CR>
+vnoremap <leader>pp    :action $LRU<CR>
 
 " Replace in path
 let g:WhichKeyDesc_Projects_ReplaceInFiles = "<leader>pR replace-in-files"
