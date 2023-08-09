@@ -15,8 +15,8 @@ vnoremap <leader>mpi    :action ImportProject<CR>
 
 " Open project
 let g:WhichKeyDesc_Major_Project_OpenProject = "<leader>mpo open-project"
-nnoremap <leader>mpo    :action WelcomeScreen.OpenProject<CR>
-vnoremap <leader>mpo    <Esc>:action WelcomeScreen.OpenProject<CR>
+nnoremap <leader>mpo    :action $LRU<CR>
+vnoremap <leader>mpo    <Esc>:action $LRU<CR>
 
 " Run project
 let g:WhichKeyDesc_Major_Project_RunProject = "<leader>mpr run-project"
